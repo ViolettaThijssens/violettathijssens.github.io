@@ -1,0 +1,122 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = 'vthijssens@hotmail.com'; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", I will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Violetta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Images\favicon.png">
+</head>
+
+<body>
+
+    <!-- ***********************  NAVIGATION  *********************** -->
+
+    <nav>
+        <div class="topnavigation">
+            <div class="topnav" id="myTopnav">
+                <div class=topnav-menu>
+                    <a href="Contact.html" target="_self" class="active">Contact</a>
+                    <a href="about me.html" target="_self">About</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+                        <div class="dropdown-content">
+                            <a href="project-airline.html" target="_self">Airline Booking</a>
+                            <a href="project-pet.html" target="_self">Pet Food Shop</a>
+                        </div>
+                    </div>
+                    <a href="index.html#myProjects" target="_self" class="mobile-nav">Projects</a>
+                    <a href="index.html" target="_self">Home</a>
+                </div>
+                <div class=topnav-logo>
+                    <a href="index.html" target="_self">
+                        <img src="Images\Violet Logo.png" alt="Logo Violetta Thijssens"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ***********************  CONTACT  *********************** -->
+
+
+    <header>
+
+        <section class="hero-contact">
+            <div class="content-wrap">
+
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- *****************  CONTACT FORM ***************** -->
+
+    <main>
+
+        <section class="contact">
+            <div class="content-1200-wrap">
+                <h2>I look forward to hearing from you!</h2>
+                <form action="" method="post">
+                    <label for: "first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" minlength="2" maxlength="40" required><br>
+                    <label for: "last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" minlength="2" maxlength="40" required><br>
+                    <label for: "email">Email</label>
+                    <input type="email" name="email" id="email" minlength="3" maxlength="254" required><br>
+                    <label for: "message">Message</label>
+                    <textarea rows="5" name="message" cols="30" id="message" minlength="10" maxlength="200" required></textarea><br>
+                    <input type="submit" name="submit" value="Send your message">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+    <footer>
+
+        <div class="content-wrap">
+            <h2>Let's Keep in Touch!</h2>
+            <ul class="contact-list">
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/violetta-thijssens-7611445a/?locale=en_US" target="_blank">LinkedIn</a>
+                </li>
+                <li><a href="https://www.behance.net/violettthijsse" target="_blank">Behance</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
