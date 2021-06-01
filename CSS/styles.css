@@ -1,0 +1,806 @@
+/* CSS HEX
+-- grey: #DCE0DC;
+-- white: #ffffff;
+--english-violet: #62466bff;
+--english-violet-2: #45364bff;
+--black-coffee: #2d2327ff;
+*/
+
+
+/* Global styles
+-------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #2d2327ff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #62466bff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5.625rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.8125rem;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 56em;
+    width: 85%;
+    margin: 0 auto;
+    padding: 3.75em 0;
+}
+
+.content-wrap-header {
+    max-width: 40em;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content-1200-wrap {
+    max-width: 70em;
+    width: 85%;
+    margin: 0 auto;
+    padding: 3.75em 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3+p {
+    font-style: italic;
+}
+
+.item-details h3~p {
+    margin: 0;
+}
+
+.divider>section {
+    border-bottom: 1px dashed #DCE0DC;
+    margin-bottom: 0.625em;
+}
+
+.divider>section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Navigation Bar
+-------------------------*/
+
+.topnavigation {
+    background-color: #2d2327ff;
+    overflow: hidden;
+}
+
+.topnav {
+    background-color: #2d2327ff;
+    overflow: hidden;
+}
+
+
+/* Footer
+-------------------------*/
+
+footer {
+    background: #45364bff;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #DCE0DC;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list a {
+    padding: 1em;
+    display: inline-block;
+}
+
+
+/* Index Page
+-------------------------------------------------------------------------------*/
+
+
+/* Profile
+-------------------------*/
+
+header {
+    background: #45364bff;
+    color: #ffffff;
+    text-justify: left;
+}
+
+.header-details {
+    background: #ffffff;
+    color: #45364bff;
+    font-weight: 600;
+    border-radius: 3.125em;
+    display: inline-block;
+    padding: 0 0.625em;
+    margin-right: 0.625em;
+    margin: 1.25em 0.625em;
+}
+
+
+/* Selling Points
+-------------------------*/
+
+.offers {
+    max-width: 70em;
+    width: 85%;
+    margin: 0 auto;
+    padding: 3.75em 0;
+    color: #45364bff;
+}
+
+.offers img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1em;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 1.25em 2.5em -1em rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1em;
+    color: #ffffff;
+}
+
+.card-image {
+    background: linear-gradient(to bottom left, #62466bff 40%, #45364bff 100%);
+}
+
+.card_title {
+    color: #45364bff;
+}
+
+.card_text {
+    color: #45364bff;
+}
+
+
+/* Projects
+-------------------------*/
+
+.projects {
+    background: #45364bff;
+    color: #ffffff;
+}
+
+.projects .btn {
+    background: #ffffff;
+    color: #45364bff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-bottom: 0.625em;
+    border-radius: 0.25em;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.projects .btn:hover {
+    background: #DCE0DC;
+    color: #62466bff;
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.05em)
+}
+
+.project-item {
+    overflow: hidden;
+    margin: 1.25em 0;
+}
+
+
+/* Recommendation
+-------------------------*/
+
+.recommendations {
+    background-image: url(../images/jess-bailey-Bg14l3hSAsA-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 6.25em;
+}
+
+
+/* About Page
+-------------------------------------------------------------------------------*/
+
+
+/* About Intro
+-------------------------*/
+
+.intro {
+    background: #45364bff;
+    color: #ffffff;
+}
+
+table {
+    padding-top: 1.5625em;
+}
+
+td:nth-child(1) {
+    width: 65%;
+    padding-right: 1.25em;
+}
+
+td:nth-child(2) {
+    border-radius: 1.25em;
+    background-image: url(../images/profile-2020.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.intro .btn {
+    background: #ffffff;
+    color: #45364bff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 1.25em 1.25em 1.25em 0;
+    border-radius: 0.25em;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.intro .btn:hover {
+    background: #DCE0DC;
+    color: #62466bff;
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.05em)
+}
+
+
+/* About Skills
+-------------------------*/
+
+.skills {
+    color: #45364bff;
+    background-image: url(../images/jess-bailey-Bg14l3hSAsA-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 6.25em;
+}
+
+.skill-type {
+    color: #45364bff;
+    border-bottom: 1px dashed #45364bff;
+    margin-bottom: 0.625em;
+}
+
+.skill-box {
+    display: flex;
+    position: relative;
+}
+
+.skill-details {
+    background: #45364bff;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 3.125em;
+    display: inline-block;
+    padding: 0 0.625em;
+    margin-right: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+
+/* Work Experience
+-------------------------*/
+
+.work-experience {
+    background: #45364bff;
+    color: #ffffff;
+}
+
+
+/* Education
+-------------------------*/
+
+.education {
+    background-image: url(../images/sharon-mccutcheon-unsplash-opacity.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 6.25em;
+}
+
+.education p {
+    width: 60%;
+}
+
+.education h4 {
+    margin: 0;
+}
+
+.education p {
+    font-style: italic;
+}
+
+
+/* Art Corner
+-------------------------*/
+
+.art {
+    background: #2d2327ff;
+    color: #ffffff;
+}
+
+.art-item {
+    display: inline-block;
+    padding-top: 0.625em;
+    padding-right: 2.5em;
+}
+
+
+/* Project Pages
+-------------------------------------------------------------------------------*/
+
+
+/* Project Profile
+-------------------------*/
+
+.hero-project1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Project-1-Banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-project2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Project-2-Banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+
+/* Project Overview
+-------------------------*/
+
+.project-overview {
+    background: #ffffff;
+    color: #45364bff;
+}
+
+
+/* Project Stages
+-------------------------*/
+
+.project-stages {
+    background: #45364bff;
+    color: #ffffff;
+}
+
+
+/* Contact Page
+-------------------------------------------------------------------------------*/
+
+
+/* Contact 
+-------------------------*/
+
+.hero-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Contact-Banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact {
+    background-image: url(../images/jess-bailey-Bg14l3hSAsA-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 6.25em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.625em;
+    margin-top: 0.25em;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    padding: 0.75em;
+    border: 1px solid #DCE0DC;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    margin-top: 0.375em;
+    margin-bottom: 1em;
+    resize: vertical
+}
+
+input[type=text] {
+    width: 20em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #62466bff;
+    color: #ffffff;
+    padding: 0.375em 1.25em;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45364bff;
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.05em)
+}
+
+
+/* Responsive
+-------------------------*/
+
+@media screen and (min-width:46.8126em) {
+    /* Header and Footer
+    ----------------------*/
+    header,
+    footer {
+        text-align: center;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    /* Navigation Bar
+    ---------------------*/
+    .topnav-menu a {
+        float: right;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 0.875em 1em;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .topnav-menu a:hover {
+        background-color: #DCE0DC;
+        color: #45364bff;
+    }
+    .dropdown {
+        float: right;
+        overflow: hidden;
+    }
+    .topnav-menu a.active,
+    .dropbtn a.active {
+        background-color: #62466bff;
+        color: #ffffff;
+    }
+    .dropdown .dropbtn {
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        padding: 1em 1em;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        border-radius: 0;
+        font-weight: 600;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: #DCE0DC;
+        color: #45364bff;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        color: #45364bff;
+        min-width: 10em;
+        box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        float: none;
+        color: #45364bff;
+        padding: 0.75em 1em;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {
+        background-color: #DCE0DC;
+        color: #45364bff;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .topnav img {
+        width: 2.5em;
+        height: 2.5em;
+        float: left;
+        margin-top: 0.3125em;
+        margin-left: 20%;
+    }
+    .topnav .mobile-nav {
+        display: none;
+    }
+    .topnav {
+        margin-right: 10%;
+    }
+    /* Index Page
+    ---------------------------------------------------------------------------*/
+    /* Selling Points
+    ---------------------*/
+    .cards_item {
+        width: 33.3333%;
+    }
+    /* Projects
+    ---------------------*/
+    .project-item img {
+        float: left;
+        margin-right: 1.25em;
+        padding: 1.5625em 0;
+        width: 25%;
+    }
+    .project-details {
+        float: left;
+        width: 50%;
+        padding-right: 3.125em;
+    }
+    .project-item:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Recommendations
+    ---------------------*/
+    .recommendation {
+        float: left;
+        width: 50%;
+        padding-right: 3.125em;
+    }
+    .recommendations-item:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* About Page
+    ---------------------------------------------------------------------------*/
+    /* About Intro
+    ---------------------*/
+    .mobile-story {
+        display: none;
+    }
+    /* Work Experience
+    ---------------------*/
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1.25em;
+    }
+    /* Project Pages
+    ---------------------------------------------------------------------------*/
+    /* Project Overview
+    ---------------------*/
+    .overview-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1.25em;
+    }
+    .step-summary-mobile {
+        display: none;
+    }
+    /* Project Stages
+    ---------------------*/
+    .project-stage {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1.25em;
+    }
+    .project-stage img {
+        width: 100%;
+    }
+    /* Learnings
+    ---------------------*/
+    .learning-details {
+        float: left;
+        width: 75%;
+    }
+    .learning-item:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Contact Page
+    ---------------------------------------------------------------------------*/
+    /* Contact 
+    ---------------------*/
+    input[type=email] {
+        width: 30em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    textarea {
+        width: 40em;
+        height: 10em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width:46.8125em) {
+    /* Global mobile styles
+    ---------------------*/
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 1.25em;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    /* Project and Contact pages
+    ----------------------------*/
+    .hero-text {
+        text-align: left;
+    }
+    /* Header and Footer
+    ---------------------*/
+    .contact-list a {
+        padding: 0.3125em;
+    }
+    /* Navigation Bar
+    ---------------------*/
+    .dropdown {
+        display: none;
+    }
+    .topnav-menu a {
+        float: right;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 0.875em 0.625em;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+    .topnav img {
+        width: 1.25em;
+        height: 1.25em;
+        float: left;
+        margin-top: 0.875em;
+        margin-left: 3%;
+    }
+    /* Index Page
+    ---------------------------------------------------------------------------*/
+    /* Selling Points
+    ---------------------*/
+    .cards_item {
+        width: 100%;
+    }
+    /* Projects
+    ---------------------*/
+    .project-item img {
+        padding: 0.9375em 0;
+        width: 100%;
+    }
+    /* About Page
+    ---------------------------------------------------------------------------*/
+    /* About Intro
+    ---------------------*/
+    table td {
+        display: none;
+    }
+    /* Project Pages
+    ---------------------------------------------------------------------------*/
+    .step-summary {
+        display: none;
+    }
+    /* Project Stages
+    ---------------------*/
+    .project-stage img {
+        width: 100%;
+    }
+    /* Contact Page
+    ---------------------------------------------------------------------------*/
+    /* Contact 
+    ----------------------*/
+    input[type=email] {
+        width: 20em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    textarea {
+        width: 20em;
+        height: 10em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
