@@ -403,7 +403,7 @@ td:nth-child(2) {
 -------------------------*/
 
 .hero-project1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Project-1-Banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Project-1-Banner.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,7 +412,7 @@ td:nth-child(2) {
 }
 
 .hero-project2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Project-2-Banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Project-2-Banner.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -452,7 +452,7 @@ td:nth-child(2) {
 -------------------------*/
 
 .hero-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Contact-Banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://violettathijssens.github.io/Images/Contact-Banner.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
