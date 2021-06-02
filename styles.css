@@ -793,6 +793,9 @@ input[type=submit]:hover {
     .project-stage img {
         width: 100%;
     }
+     .project-stage iframe {
+        width: 100%;
+    }
     /* Contact Page
     ---------------------------------------------------------------------------*/
     /* Contact 
