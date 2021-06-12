@@ -446,6 +446,42 @@ td:nth-child(2) {
     color: #ffffff;
 }
 
+.stage-summary a:hover {
+    opacity: 0.7;
+}
+
+
+/* Detailed Images from Project Pages
+-------------------------------------------------------------------------------*/
+
+
+/* Map-detail
+-------------------------*/
+
+.map-detail img {
+    max-width: 140%;
+}
+
+.detail .btn {
+    background: #45364bff;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.25em;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.detail .btn:hover {
+    background: #62466bff;
+    color: #DCE0DC;
+    box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.05em)
+}
+
 
 /* Contact Page
 -------------------------------------------------------------------------------*/
