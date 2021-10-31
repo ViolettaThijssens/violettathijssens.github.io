@@ -450,6 +450,10 @@ td:nth-child(2) {
     opacity: 0.7;
 }
 
+.project-stages a {
+    color: #ffffff;
+}
+
 
 /* Detailed Images from Project Pages
 -------------------------------------------------------------------------------*/
